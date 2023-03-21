@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 147px 0 147px;
+} 
+
+/* header */
+
+header {
+    width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 71px;
+    margin-bottom: 92px;
+}
+
+.menu {
+    padding-left: 0;
+    margin: 0;
+    list-style: none; /* данной командой мы убрали
+    точки неупорядоченного списка перед элементами
+    списка*/
+    color: #7D7D7D;
+}
+
+.menu li:first-child {
+color: #03A9F4;
+}
+
+.menu li {
+    display: inline;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 90px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: inherit; /* данной командой мы даем
+    наследственность родителя (menu) потомку (a)*/
+}
+
+.menu li:hover {
+    color: #03A9F4;
+}
+
+/* main */
+
+main {
+    width: 906px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+article {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 130px;
+}
+
+article img {
+    width: 100%;
+}
+
+article a {
+    display: block;
+    margin-top: 62px;
+    margin-bottom: 32px;
+    text-decoration: none;
+}
+
+article h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #626262;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+article p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #626262;
+    margin: 0;
+    text-align: left;
+}
+
+/*
+article :nth-child(1) {
+    margin-left: 4%;
+}
+*/
+button {
+    display: block;
+    width: 165px;
+    margin: 0 auto 47px;
+    height: 60px;
+    background-color: rgb(249, 249, 255, 0);
+    border: 1px solid #626262;
+}
